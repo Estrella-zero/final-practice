@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>校园平台</title>
+    <link href="libs/bootstrap.min.css" rel="stylesheet">
+    <style>
+    .hero {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .big-card {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        transition: transform 0.2s;
+    }
+    .big-card:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body>
+    <div id="net-tip" class="alert alert-danger d-none">网络已断开，部分功能不可用</div>
+
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">校园平台</a>
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="campus.html">校园公共服务</a>
+          <a class="nav-link" href="personal.html">个人服务</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="container">
+        <h1 class="text-center mb-5">校园平台</h1>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-5">
+            <a href="campus.html" class="text-decoration-none">
+              <div class="card big-card bg-primary text-white">
+                <div>校园公共服务</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-5">
+            <a href="personal.html" class="text-decoration-none">
+              <div class="card big-card bg-success text-white">
+                <div>个人服务</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center py-3">
+      <p class="mb-0">校园平台 · 期末大作业</p>
+    </footer>
+
+<script src="libs/bootstrap.bundle.min.js"></script>
+<script>
+  var tip = document.getElementById('net-tip');
+  window.addEventListener('offline', function () { tip.classList.remove('d-none'); });
+  window.addEventListener('online', function () { tip.classList.add('d-none'); });
+</script>
+</body>
+</html>
