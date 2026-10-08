@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>生活宇宙</title>
+  <link href="css/sun.css" rel="stylesheet">
+  <style>
+    #title-box {
+      position: fixed;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      text-align: center;
+      z-index: 10;
+      pointer-events: none;
+    }
+    #title-box h1 { font-size: 1.5rem; margin: 0; }
+    #title-box p { font-size: 0.85rem; opacity: 0.8; margin: 4px 0 0; }
+  </style>
+</head>
+<body>
+  <a href="personal.html" class="back">← 返回个人服务</a>
+  <div id="title-box">
+    <h1>生活宇宙</h1>
+    <p>任务 · 学习 · 课程 · 留言</p>
+  </div>
+  <script src="libs/three.min.js"></script>
+  <script src="libs/OrbitControls.js"></script>
+  <script src="sun.js"></script>
+</body>
+</html>
