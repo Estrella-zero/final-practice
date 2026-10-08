@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>课程表</title>
+  <link href="css/courses.css" rel="stylesheet">
+</head>
+<body>
+  <a class="back" href="personal.html">← 返回个人服务</a>
+  <h1>课程表</h1>
+  <form id="add-form">
+    <input type="text" id="course-input" placeholder="请输入课程名">
+    <button type="submit">添加</button>
+    <button type="button" id="search">查询</button>
+  </form>
+  <p class="tip" id="tip"></p>
+  <div class="filters">
+    <button data-filter="all">全部</button>
+    <button data-filter="active">未上</button>
+    <button data-filter="done">已上</button>
+  </div>
+  <ul id="course-list"></ul>
+
+  <script src="courses.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>个人服务中心</title>
+    <link href="libs/bootstrap.min.css" rel="stylesheet">
+    <style>
+    .my-card-title { color: #198754; }
+    </style>
+</head>
+<body>
+    <div id="net-tip" class="alert alert-danger d-none">网络已断开，部分功能不可用</div>
+    <header>
+    <div class="container">
+    <nav class="navbar navbar-expand-md bg-body-tertiary mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">个人服务中心</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" href="index.html">首页</a>
+            <a class="nav-link" href="courses.html">课程</a>
+            <a class="nav-link" href="singer.html">歌手</a>
+            <a class="nav-link" href="sun.html">生活宇宙</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h2 class="text-center mb-4">学习与生活</h2>
+    <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title my-card-title">课程表</h5>
+                    <p class="card-text">添加、筛选与搜索本学期课程</p>
+                    <a href="courses.html" class="btn btn-success">进入课程表</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title my-card-title">我的歌手</h5>
+                    <p class="card-text">收藏歌曲的播放与收藏数据看板</p>
+                    <a href="singer.html" class="btn btn-success">查看数据</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title my-card-title">留言反馈</h5>
+                    <p class="card-text">对本站提出意见与建议</p>
+                    <a href="sub2.html" class="btn btn-success">去留言</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center mb-4 mt-4">关于我</h2>
+    <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title my-card-title">个人简介</h5>
+                    <p class="card-text">我的照片、爱好与常用链接</p>
+                    <a href="about.html" class="btn btn-success">查看详情</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title my-card-title">生活宇宙</h5>
+                    <p class="card-text">三维展示我的学习与生活</p>
+                    <a href="sun.html" class="btn btn-success">进入三维</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center mb-4 mt-4">生活点滴</h2>
+    <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title my-card-title">校园风景</h5>
+                    <p class="card-text">记录校园里的美丽瞬间</p>
+                    <a href="view.html" class="btn btn-success">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </header>
+    <footer class="text-center py-3">
+        <p class="mb-0">个人服务中心 · 校园服务与个人生活中心</p>
+    </footer>
+
+<script src="libs/bootstrap.bundle.min.js"></script>
+<script>
+  var tip = document.getElementById('net-tip');
+  window.addEventListener('offline', function () { tip.classList.remove('d-none'); });
+  window.addEventListener('online', function () { tip.classList.add('d-none'); });
+</script>
+</body>
+</html>

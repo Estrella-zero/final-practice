@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的歌手</title>
+  <link href="libs/bootstrap.min.css" rel="stylesheet">
+  <style>
+  .chart-box { height: 360px; }
+  </style>
+</head>
+<body class="container py-4">
+  <a href="personal.html" class="btn btn-outline-secondary btn-sm mb-3">← 返回个人服务</a>
+  <header>
+    <h1 class="h3">歌手数据看板</h1>
+    <p class="text-muted">数据来源：个人收藏（播放/收藏量仅供示意）</p>
+  </header>
+
+  <section class="mb-4">
+    <h2 class="h5">歌曲列表</h2>
+
+    <div class="mb-3 d-flex align-items-center gap-3">
+      <div>
+        <label>年代：</label>
+        <select id="filter-decade">
+          <option value="">全部</option>
+          <option value="2000">2000年代</option>
+          <option value="2010">2010年代</option>
+        </select>
+      </div>
+      <div id="status-filters">
+        <button class="btn btn-outline-primary btn-sm" data-filter="all">全部</button>
+        <button class="btn btn-outline-success btn-sm" data-filter="pop">流行</button>
+        <button class="btn btn-outline-danger btn-sm" data-filter="folk">民谣</button>
+      </div>
+    </div>
+
+    <ul id="singer-list" class="list-group"></ul>
+  </section>
+
+  <section class="row g-3 mb-4" id="cards"></section>
+  <section class="row g-3">
+    <div class="col-lg-6">
+      <h2 class="h5">各歌曲播放与收藏量（柱状图）</h2>
+      <div id="bar-chart" class="chart-box"></div>
+    </div>
+    <div class="col-lg-6">
+      <h2 class="h5">各歌手播放量占比（饼状图）</h2>
+      <div class="chart-box" id="pie-chart"></div>
+    </div>
+  </section>
+
+  <script src="libs/jquery-3.7.1.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+  <script src="libs/echarts.min.js"></script>
+  <script src="singer.js"></script>
+</body>
+</html>

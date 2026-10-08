@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>校园公共服务</title>
+    <link href="libs/bootstrap.min.css" rel="stylesheet">
+    <style>.my-card-title { color: #0c49ba; }</style>
+</head>
+<body>
+    <div id="net-tip" class="alert alert-danger d-none">网络已断开，部分功能不可用</div>
+    <header>
+    <div class="container py-4">
+    <nav class="navbar navbar-expand-md bg-body-tertiary mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">校园公共服务</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="index.html">首页</a>
+            <a class="nav-link" href="personal.html">个人服务</a>
+             <a class="nav-link" href="sub.html">留言反馈</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <a href="index.html" class="btn btn-outline-secondary btn-sm mb-3">← 返回首页</a>
+    <h2 class="mb-4">校园公共服务</h2>
+    <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title my-card-title">自习室查询</h5>
+                    <p class="card-text">查看自习室情况</p>
+                    <a href="room.html" class="btn btn-primary">进入</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title my-card-title">图书馆数据</h5>
+                    <p class="card-text">各类图书藏书量与借阅量统计</p>
+                    <a href="books.html" class="btn btn-primary">进入</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title my-card-title">社团风采</h5>
+                    <p class="card-text">校园社团活动与志愿服务展示</p>
+                    <a href="group.html" class="btn btn-primary">进入</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </header>
+    <footer class="text-center py-3">
+      <p class="mb-0">校园公共服务 · 校园服务与个人生活中心</p>
+    </footer>
+
+<script src="libs/bootstrap.bundle.min.js"></script>
+<script>
+  var tip = document.getElementById('net-tip');
+  window.addEventListener('offline', function () { tip.classList.remove('d-none'); });
+  window.addEventListener('online', function () { tip.classList.add('d-none'); });
+</script>
+</body>
+</html>

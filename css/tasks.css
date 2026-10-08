@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { 
+    font-family: sans-serif; 
+    max-width: 480px; 
+    margin: 24px auto; 
+    padding: 0 16px; }
+.back { 
+    display: inline-block; 
+    margin-bottom: 8px; 
+    color: #0d6efd; 
+    text-decoration: none; }
+li.done { 
+    text-decoration: line-through; 
+    color: #999; }
+.tip { 
+    color: #c00; 
+    font-size: 14px; 
+    min-height: 20px; }
+.filters { margin: 12px 0; }
+.filters button { margin-right: 8px; }
+.chart-title { font-size: 18px; }
+.chart-box { height: 300px; }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>意见反馈</title>
+</head>
+<body>
+  <a href="index.html" style="display:inline-block;margin:8px 0 0 16px;color:#0d6efd;text-decoration:none;">← 返回首页</a>
+  <header>
+    <h1>意见反馈</h1>
+    <p>欢迎留下你宝贵的建议</p>
+  </header>
+  <main>
+    <section id="intro">
+      <h2>填写说明</h2>
+      <p>你的反馈将帮助我们完善本站</p>
+    </section>
+    <section id="form">
+      <h2>反馈表单</h2>
+    </section>
+    <form action="#" method="get">
+      <p>
+        <label for="name">姓名（可填昵称）</label>
+        <input type="text" id="name" name="name" placeholder="怎么称呼你" required>
+      </p>
+      <p>
+        <label for="mail">邮箱</label>
+        <input type="email" id="mail" name="mail" required>
+      </p>
+      <p>本站评分</p>
+      <p>
+        <label><input type="radio" name="score" value="5" checked>很好</label>
+        <label><input type="radio" name="score" value="4">好</label>
+        <label><input type="radio" name="score" value="3">一般</label>
+      </p>
+      <p>希望增加的功能</p>
+      <p>
+        <label><input type="checkbox" name="topic" value="layout">多语言翻译</label>
+        <label><input type="checkbox" name="topic" value="js">二手交易</label>
+        <label><input type="checkbox" name="topic" value="chart">心理咨询</label>
+      </p>
+      <p>
+        <label for="advice">具体建议</label><br>
+        <textarea id="advice" name="advice" rows="4" maxlength="200" placeholder="说点什么"></textarea>
+      </p>
+      <p>
+        <button type="submit">提交反馈</button>
+      </p>
+    </form>
+  </main>
+  <footer>
+    <p>校园服务与个人生活中心</p>
+  </footer>
+</body>
+</html>
